@@ -1,2 +1,2 @@
-# Formik-Examples
+# Formik Examples
 Formik Examples.
