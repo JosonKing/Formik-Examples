@@ -648,3 +648,38 @@ label.checkbox {
 button[type="submit"] {
   margin-top: 1rem;
 }
+
+.row {
+  display: flex;
+  align-items: center;
+}
+
+.invalid .feedback {
+  color: red;
+}
+
+.valid .feedback {
+  color: green;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.flex {
+  display: flex;
+}
+
+.form-control {
+  width: 400px;
+  margin-top: 1rem;
+}
+
+.footer {
+  position: fixed;
+  bottom: 20px;
+}

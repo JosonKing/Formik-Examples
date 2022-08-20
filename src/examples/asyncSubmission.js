@@ -18,14 +18,20 @@ export const AsyncSubmission = () => {
         }}
       >
         <Form>
-          <label htmlFor='firstName'>first name</label>
-          <Field id='firstName' name='firstName' type='text' placeholder='Joson'></Field>
+          <div>
+            <label htmlFor='firstName'>first name</label>
+            <Field id='firstName' name='firstName' type='text' placeholder='Joson'></Field>
+          </div>
           
-          <label htmlFor='lastName'>last name</label>
-          <Field id='lastName' name='lastName' type='text' placeholder='King'></Field>
-          
-          <label htmlFor='email'>email</label>
-          <Field id='email' name='email' type='email' placeholder='abc@de.com'></Field>
+          <div>
+            <label htmlFor='lastName'>last name</label>
+            <Field id='lastName' name='lastName' type='text' placeholder='King'></Field>
+          </div>
+
+          <div>
+            <label htmlFor='email'>email</label>
+            <Field id='email' name='email' type='email' placeholder='abc@de.com'></Field>
+          </div>
 
           <button type='submit'>submit</button>
         </Form>

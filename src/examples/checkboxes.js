@@ -18,15 +18,15 @@ export const Checkboxes = () => {
       >
         {({values}) => (
           <Form>
-            <div style={{marginBottom: '20px'}}>
+            <label style={{marginBottom: '20px'}}>
               <Field type='checkbox' name='toggle' /> checked: {values.toggle ? 'true' : 'false'}
-            </div>
+            </label>
 
-            <div>checkbox group checked: {values.checked.join(', ')}</div>
+            <h5>checkbox group checked: {values.checked.join(', ')}</h5>
             <div>
-              <Field type='checkbox' name='checked' value='one' /><span style={{marginRight: '12px'}}>one</span>
-              <Field type='checkbox' name='checked' value='two' /><span style={{marginRight: '12px'}}>two</span>
-              <Field type='checkbox' name='checked' value='three' /><span style={{marginRight: '12px'}}>three</span>
+              <label><Field type='checkbox' name='checked' value='one' />one</label>
+              <label><Field type='checkbox' name='checked' value='two' />two</label>
+              <label><Field type='checkbox' name='checked' value='three' />three</label>
             </div>
             
 
