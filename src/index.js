@@ -28,7 +28,13 @@ function App() {
 
   return (
     <div>
-      <div>{comps.map(comp => <button onClick={() => setActiveComp(comp)}>{comp}</button>)}</div>
+      <div>{comps.map(comp => 
+        <button 
+          style={{ backgroundColor: comp === activeComp ? '#1e80ff' : '', borderColor: comp === activeComp ? '#1e80ff' : ''}} 
+          onClick={() => setActiveComp(comp)}
+        >
+          {comp}
+        </button>)}</div>
       {activeComp === comps[0] && <SignupForm />}
       {activeComp === comps[1] && <Basic />}
       {activeComp === comps[2] && <AsyncSubmission />}
